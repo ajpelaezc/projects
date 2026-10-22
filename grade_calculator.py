@@ -3,9 +3,14 @@ grades = []
 
 for i in range(1, 6):
     while True:
-        grade = float(input(f"Write grade {i}: "))
-        if 0 >= grade <= 5:
-            break
+        try:
+            grade = float(input(f"Write grade {i}: "))
+            if 0 <= grade <= 5:
+                break
+
+        except ValueError:
+            print("Please enter a valid number.")
+
         
         print("Invalid Grade")
 
