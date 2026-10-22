@@ -24,3 +24,4 @@ else:
 
 print(f"Your highest grade was: {max_grade}")
 print(f"Your lowest grade was: {min_grade}")
+
